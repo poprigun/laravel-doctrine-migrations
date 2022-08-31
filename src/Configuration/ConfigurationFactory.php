@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace LaravelDoctrine\Migrations\Configuration;
 
+use Doctrine\Migrations\Configuration\Configuration;
 use Doctrine\Migrations\Configuration\Migration\ConfigurationArray;
 use Illuminate\Config\Repository;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
@@ -48,7 +49,8 @@ class ConfigurationFactory
                     'directory',
                     database_path('migrations')
                 )
-            ]
+            ],
+            'organize_migrations' => $config->get('organize_migrations', Configuration::VERSIONS_ORGANIZATION_NONE),
         ]);
     }
 }

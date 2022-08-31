@@ -16,6 +16,7 @@ use LaravelDoctrine\Migrations\Console\RefreshCommand;
 use LaravelDoctrine\Migrations\Console\ResetCommand;
 use LaravelDoctrine\Migrations\Console\RollbackCommand;
 use LaravelDoctrine\Migrations\Console\StatusCommand;
+use LaravelDoctrine\Migrations\Console\SyncMetadataCommand;
 use LaravelDoctrine\Migrations\Console\VersionCommand;
 
 class MigrationsServiceProvider extends ServiceProvider
@@ -52,6 +53,7 @@ class MigrationsServiceProvider extends ServiceProvider
             LatestCommand::class,
             StatusCommand::class,
             MigrateCommand::class,
+            SyncMetadataCommand::class,
             ExecuteCommand::class,
             VersionCommand::class,
             RefreshCommand::class,
