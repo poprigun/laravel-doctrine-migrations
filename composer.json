@@ -20,9 +20,9 @@
   "require": {
     "php": "^7.4|^8",
     "doctrine/migrations": "^3.4",
-    "illuminate/config": "^^9.0",
+    "illuminate/config": "^9.0",
     "illuminate/contracts": "^9.0",
-    "illuminate/console": "^^9.0",
+    "illuminate/console": "^9.0",
     "laravel-doctrine/orm": "^2"
   },
   "require-dev": {
